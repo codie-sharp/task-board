@@ -17,6 +17,6 @@ Solution:
 
 Minimum Viable Product:
 - Dispatcher view with backlog, technicians ("workers"), and task queue per worker.
-- Tickets that can be created, assigned, updated, and completed. These must contain all information necessary to accurately track work. 
+- Tickets ("tasks") that can be created, assigned, updated, and completed. These must contain all information necessary to accurately track work. 
 - A form is used to create all tasks. This must validate input and be easier to use. Tasks are automatically placed in the backlog and are assigned from there. The backlog is sorted by severity > date.
 - Outlook integration that can send tasks as emails for tracking, dispatch, and calendar tracking. Most of the value lies here as the project cannot streamline the workflow without these features.
