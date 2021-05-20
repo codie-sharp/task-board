@@ -11,7 +11,7 @@ This approach leaves a huge margin of error by having 3 separate systems with no
 Solution:
 1. Issue reported by phone/email.
 2. Ticket created in company software system.
-3. Details are entered into #task-board system via a validated form.
+3. Details are entered into task-board system via a validated form.
 4. task-board sends formatted email for tracking.
 task-board replaces the physical ticket board entirely by providing not only a visual representation, but validation and tracking. This approach eliminates most room for human error and increases dispatcher efficiency. The familiar workflow and appearance encourages user acceptance. 
 
