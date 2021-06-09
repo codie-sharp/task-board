@@ -1,0 +1,69 @@
+body {
+    background-image: url(assets/woodv.jpg);
+}
+main {
+    display: flex;
+    flex-flow: column wrap;
+}
+section {
+    text-align: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-image: url(assets/cork.jpg);
+    background-clip: content-box;
+}
+h2 {
+    background-image: url(assets/woodh.jpg);
+    padding: .5em;
+    font-size: 3vh;
+}
+.queue {
+    background: none;
+}
+h2 > span {
+    font-family:"Courier New", Monaco, monospace;
+    background-color: white;
+    border: .15em outset rgb(75, 75, 75);
+    padding: .2em;
+}
+.ticket-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 88vh;
+    overflow: auto;
+}
+.ticket {
+    width: 90%;
+    max-height: 66vh;
+    margin: 1em;
+    overflow: auto;
+    background-color: rgb(250, 225, 50);
+    box-shadow: .4rem .4rem .5rem rgb(50, 50, 50);
+}
+table {
+    font-family: cursive;
+    font-size: 2vh;
+    padding: .5em;
+    text-align: start;
+    width: 100%;
+}
+th:nth-child(1) {
+ text-align: start;
+}
+th:nth-child(2) {
+    text-align: center;
+}
+th:nth-child(3) {
+    text-align: end;
+}
+td {
+    border-top: 1px solid rgb(50, 50, 150);
+    border-bottom: 1px solid rgb(50, 50, 150);
+    padding: .25em;
+}
+.collapse {
+    visibility: collapse;
+    height: 5%;
+}
