@@ -1,8 +1,8 @@
 body {
-    background-image: url(assets/woodv.jpg);
+    background-image: url(assets/cork.jpg);
 }
 header {
-    height: 2vh;
+    height: 3vh;
     background-image: url(assets/woodh.jpg);
     position: fixed;
     top: 0;
@@ -17,15 +17,14 @@ main {
 }
 section {
     text-align: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    background-image: url(assets/cork.jpg);
-    background-clip: content-box;
+    margin-left: -0.5em;
 }
 h2 {
     background-image: url(assets/woodh.jpg);
-    padding: .5em;
     font-size: 3vh;
+    background-clip: border-box;
+    border: 0.5em solid transparent;
+    width: 100%;
 }
 .queue {
     background: none;
@@ -46,7 +45,7 @@ h2 > span {
 }
 .ticket {
     width: 90%;
-    max-height: 40vh;
+    height: 60vh;
     margin: 1em;
     overflow: auto;
     background-color: rgb(250, 225, 50);
@@ -73,12 +72,30 @@ td {
     border-bottom: 1px solid rgb(50, 50, 150);
     padding: .25em;
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+    .ticket-container {
+        flex-flow: column wrap;
+    }
+
+    .ticket {
+        width: 40vw;
+        height: 80vh;
+   }
+}
+@media screen and (min-width: 1024px) {
     main {
+        flex-flow: row wrap;
+    }
+    .ticket-container {
         flex-direction: row;
+        width: 350px;
+        height: 78vh;
+    }
+    .backlog {
+        height: 156vh;
     }
     .ticket {
         width: 300px;
         height: 500px;
-   }
+    }
 }
