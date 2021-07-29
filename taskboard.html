@@ -3,14 +3,34 @@
 <head>
     <title>Task Board</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="app.js">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
     <header>
+        <button id="newTicketButton">New Ticket</button>
+        <div id="newTicketWindow">
+            <form class="newTicketForm">
+            <span class="close">&times;</span>
+                <label for="status">Status: </label>
+                <select id="status" name="status">
+                    <option value="Backlog">Backlog</option>
+                    <option value="Tech 1">Tech 1</option>
+                    <option value="Tech 2">Tech 2</option>
+                    <option value="Tech 3">Tech 3</option>
+                    <option value="Tech 4">Tech 4</option>
+                </select> <br>
+                <label for="ticketNumber">Ticket: </label>
+                <input type="text" id="ticketNumber" name="ticketNumber" maxlength="6" minlength="6" size="4"><br>
+                <label for="customer">Customer: </label>
+                <input type="text" id="customer" name="customer" size="12">
+                <label for="customerNumber">Customer Number: </label>
+                <input type="text" id="customerNumber" name="customerNumber" maxlength="5" minlength="5" size="3"><br>
+            </form>
+        </div>
     </header>
     <main>
-        <section class="backlog" draggable="true">
+        <section draggable="true">
             <h2>
                 <span>Backlog</span>
             </h2>
