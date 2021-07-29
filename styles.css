@@ -84,12 +84,15 @@ td {
 }
 @media screen and (min-width: 1024px) {
     main {
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
+        overflow: auto;
+        margin-left: -.5em;
     }
     .ticket-container {
         flex-direction: row;
         width: 350px;
         height: 78vh;
+        align-items: flex-start;
     }
     .backlog {
         height: 156vh;
