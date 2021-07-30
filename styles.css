@@ -18,6 +18,7 @@ button {
     padding: .2em;
     font-size: 2vh;
     font-weight: bold;
+    cursor: pointer;
 }
 #newTicketWindow {
     display: none; 
@@ -65,6 +66,11 @@ form input {
     font-family: cursive;
     font-size: 2vh;
 }
+form textarea {
+    margin-top: .5em;
+    font-family: cursive;
+    font-size: 2vh;
+}
 main {
     display: flex;
     flex-flow: column wrap;
@@ -82,14 +88,12 @@ h2 {
     border: 0.5em solid transparent;
     width: 100%;
 }
-.queue {
-    background: none;
-}
-h2 > span {
+h2 > button {
     font-family:"Courier New", Monaco, monospace;
     background-color: white;
     border: .15em outset rgb(75, 75, 75);
     padding: .2em;
+    font-size: 3vh;
 }
 .ticket-container {
     display: flex;
@@ -148,6 +152,9 @@ td {
         min-width: 20vw;
         height: 75vh;
         align-items: flex-start;
+    }
+    #backlog {
+        height: 100%;
     }
     .ticket {
         width: 300px;

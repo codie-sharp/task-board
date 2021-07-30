@@ -10,3 +10,13 @@ window.onload = function(){
     newTicketWindow.style.display = "none";
     }
 };
+
+function showHide(id) {
+    let status = document.getElementById(id);
+    if (status.style.display === "none") {
+        status.style.display = "flex";
+    } 
+    else {
+        status.style.display = "none";
+    }
+}

@@ -26,15 +26,17 @@
                 <input type="text" id="customer" name="customer" size="12">
                 <label for="customerNumber">Customer Number: </label>
                 <input type="text" id="customerNumber" name="customerNumber" maxlength="5" minlength="5" size="3"><br>
+                <label for="serviceRequest">Service Request: </label>
+                <textarea id="serviceRequest" name="serviceRequest" rows="3" cols="30" required></textarea>
             </form>
         </div>
     </header>
     <main>
         <section draggable="true">
             <h2>
-                <span>Backlog</span>
+                <button onclick="showHide('backlog')">Backlog</button>
             </h2>
-            <div class="ticket-container">
+            <div id="backlog" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -165,9 +167,9 @@
         </section>
         <section draggable="true">
             <h2>
-                <span>Technician 1</span>
+                <button onclick="showHide('tech1')">Technician 1</button>
             </h2>
-            <div class="ticket-container">
+            <div id="tech1" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -234,9 +236,9 @@
                 </div>
             </div>
             <h2 class="queue">
-                <span>Queue</span>
+                <button onclick="showHide('queue1')">Queue</button>
             </h2>
-            <div class="ticket-container">
+            <div id="queue1" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -305,9 +307,9 @@
         </section>
         <section draggable="true">
             <h2>
-                <span>Technician 2</span>
+                <button onclick="showHide('tech2')">Technician 2</button>
             </h2>
-            <div class="ticket-container">
+            <div id="tech2" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -326,9 +328,9 @@
                 </div>
             </div>
             <h2 class="queue">
-                <span>Queue</span>
+                <button onclick="showHide('queue2')">Queue</button>
             </h2>
-            <div class="ticket-container">
+            <div id="queue2" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -349,9 +351,9 @@
         </section>
         <section draggable="true">
             <h2>
-                <span>Technician 3</span>
+                <button onclick="showHide('tech3')">Technician 3</button>
             </h2>
-            <div class="ticket-container">
+            <div id="tech3" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -370,9 +372,9 @@
                 </div>
             </div>
             <h2 class="queue">
-                <span>Queue</span>
+                <button onclick="showHide('queue3')">Queue</button>
             </h2>
-            <div class="ticket-container">
+            <div id="queue3" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -393,9 +395,9 @@
         </section>
         <section draggable="true">
             <h2>
-                <span>Technician 4</span>
+                <button onclick="showHide('tech4')">Technician 4</button>
             </h2>
-            <div class="ticket-container">
+            <div id="tech4" class="ticket-container">
                 <div class="ticket" draggable="true">
                     <table>
                         <th>JT 12345</th>
@@ -414,9 +416,9 @@
                 </div>
             </div>
             <h2 class="queue">
-                <span>Queue</span>
+                <button onclick="showHide('queue4')">Queue</button>
             </h2>
-            <div class="ticket-container">
+            <div id="queue4" class="ticket-container">
                 
             </div>
         </section>
