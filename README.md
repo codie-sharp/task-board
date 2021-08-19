@@ -1,3 +1,5 @@
+This is a vanilla JS, CSS, HTML implementation for Code Louisville Summer 2021. I will be rebuilding this in React.
+
 # task-board
 An app for tracking and assigning tasks. This project is a solution to a workflow issue. 
 
